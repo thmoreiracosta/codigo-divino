@@ -1,4 +1,5 @@
-import { Sparkles, ArrowRight, ShieldCheck, BookOpen, CheckCircle } from 'lucide-react';
+import ebookImage from '../assets/CÓDIGO_DIVINO.png';
+import { Sparkles, ArrowRight, ShieldCheck, CheckCircle } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -7,24 +8,24 @@ export function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           <div className="lg:col-span-7 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-semibold mb-6">
               <Sparkles size={16} />
               <span>Para los niños y toda la familia</span>
             </div>
-            
+
             <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-tight mb-6">
               Descubre la historia de la Biblia <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-yellow-500 bg-clip-text text-transparent">como nunca antes</span>
             </h1>
-            
+
             <p className="text-lg sm:text-xl text-slate-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               <strong className="text-white">¿Qué es CÓDIGO DIVINO?</strong> Es un material exclusivo que te lleva a través de toda la historia de la Biblia con bosquejos visuales, ilustraciones impactantes y explicaciones claras, diseñadas para ayudarte a entender y aplicar la Palabra de Dios.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <a 
-                href="#oferta" 
+              <a
+                href="#oferta"
                 className="w-full sm:w-auto px-8 py-4 rounded-full font-extrabold text-base bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 hover:from-amber-400 hover:to-yellow-400 transition-all shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2 group"
               >
                 <span>¡Quiero mi Ebook Ahora!</span>
@@ -38,11 +39,15 @@ export function Hero() {
           </div>
 
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-md aspect-[3/4] bg-gradient-to-br from-amber-500/20 via-slate-900 to-slate-900 border border-amber-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col justify-between overflow-hidden group">
-              <div className="absolute top-0 right-0 p-8 text-amber-500/10 pointer-events-none group-hover:scale-110 transition-transform">
-                <BookOpen size={200} />
+            <div className="relative w-full max-w-lg aspect-[3/4] bg-gradient-to-br from-amber-500/20 via-slate-900 to-slate-900 border border-amber-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col justify-between overflow-hidden group">
+              <div className="flex justify-center mb-2 relative z-10">
+                <img
+                  src={ebookImage}
+                  alt="Código Divino"
+                  className="w-54 sm:w-80 object-contain drop-shadow-[0_25px_45px_rgba(0,0,0,.65)] group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              
+
               <div>
                 <span className="px-3 py-1 bg-amber-500 text-slate-950 text-xs font-bold rounded-md uppercase tracking-wider">
                   Ebook Exclusivo

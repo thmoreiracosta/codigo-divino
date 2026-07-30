@@ -3,7 +3,10 @@ import { Flame, ArrowRight, ShieldCheck, Star } from 'lucide-react';
 
 export function Pricing() {
   return (
-    <section id="oferta" className="py-24 bg-gradient-to-b from-slate-950 to-slate-900 border-t border-slate-800">
+    <section
+      id="oferta"
+      className="py-24 bg-gradient-to-b from-slate-950 to-slate-900 border-t border-slate-800"
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-bold mb-6 animate-pulse">
@@ -11,43 +14,61 @@ export function Pricing() {
           <span>Oferta por tiempo limitado</span>
         </div>
 
-        <h2 className="text-3xl sm:text-5xl font-black mb-4">Comienza tu viaje hoy mismo</h2>
+        <h2 className="text-3xl sm:text-5xl font-black mb-4">
+          Comienza tu viaje hoy mismo
+        </h2>
+
         <p className="text-slate-400 text-lg mb-12 max-w-xl mx-auto">
           Obtén acceso instantáneo a todo el material digital de Código Divino y fortalece la fe de tus seres queridos.
         </p>
 
-        <div className="bg-slate-900 border-2 border-amber-500/50 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden max-w-xl mx-auto">
+        <div className="bg-slate-900 border-2 border-amber-500/50 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden max-w-3xl mx-auto">
+
           <div className="absolute top-0 right-0 bg-amber-500 text-slate-950 font-black text-xs px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
             Acceso Inmediato
           </div>
 
-          <div className="text-slate-400 text-sm uppercase tracking-wider font-semibold mb-2">Ebook Digital Completo</div>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-6">
+          <div className="text-slate-400 text-sm uppercase tracking-wider font-semibold mb-8">
+            Ebook Digital Completo
+          </div>
 
-            {/* Imagem do eBook */}
-            <img
-              src={ebookImage}
-              alt="Ebook Código Divino"
-              className="w-40 sm:w-48 drop-shadow-2xl hover:scale-105 transition-transform duration-300"
-            />
+          <div className="flex items-center gap-12 mb-10">
 
-            {/* Preço */}
-            <div className="text-center sm:text-left">
-              <div className="text-slate-500 line-through text-2xl mb-2">
+            {/* Capa */}
+            <div className="w-[42%] flex justify-start">
+              <img
+                src={ebookImage}
+                alt="Código Divino"
+                className="w-full max-w-xs object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,.6)]"
+              />
+            </div>
+
+            {/* Informações */}
+            <div className="w-[58%] text-left">
+
+              <div className="text-slate-400 text-sm uppercase tracking-wider font-semibold mb-3">
+                Ebook Digital Completo
+              </div>
+
+              <div className="text-slate-500 line-through text-3xl mb-3">
                 $19.90 USD
               </div>
 
-              <div className="text-5xl sm:text-6xl font-black text-white">
-                $6.90{" "}
-                <span className="text-2xl font-bold text-amber-400">
-                  USD
-                </span>
+              <div className="text-6xl font-black text-white leading-none">
+                $6.90
               </div>
+
+              <div className="text-3xl font-bold text-amber-400 mt-2">
+                USD
+              </div>
+
             </div>
 
           </div>
 
-          <p className="text-slate-300 text-sm mb-8">Pago único. Sin mensualidades ni cargos ocultos.</p>
+          <p className="text-slate-300 text-sm mb-8">
+            Pago único. Sin mensualidades ni cargos ocultos.
+          </p>
 
           <a
             href="https://pay.kiwify.com/disLgbb"
@@ -56,7 +77,10 @@ export function Pricing() {
             className="w-full py-5 rounded-2xl font-black text-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 hover:from-amber-400 hover:to-yellow-400 transition-all shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2 group mb-6"
           >
             <span>¡QUIERO CÓDIGO DIVINO AHORA!</span>
-            <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+            <ArrowRight
+              size={22}
+              className="group-hover:translate-x-1 transition-transform"
+            />
           </a>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-slate-400">
@@ -64,11 +88,13 @@ export function Pricing() {
               <ShieldCheck size={16} className="text-amber-400" />
               <span>Compra 100% Segura</span>
             </div>
+
             <div className="flex items-center gap-1.5">
               <Star size={16} className="text-amber-400" />
               <span>Garantía de Satisfacción de 7 Días</span>
             </div>
           </div>
+
         </div>
 
       </div>
