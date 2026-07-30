@@ -22,8 +22,8 @@ export function Pricing() {
 
           <div className="text-slate-400 text-sm uppercase tracking-wider font-semibold mb-2">Ebook Digital Completo</div>
           <div className="flex items-center justify-center gap-4 mb-6">
-            <span className="text-slate-500 line-through text-2xl">$47.00 USD</span>
-            <span className="text-5xl sm:text-6xl font-black text-white">$17.00 <span className="text-2xl font-bold text-amber-400">USD</span></span>
+            <span className="text-slate-500 line-through text-2xl">$19.90 USD</span>
+            <span className="text-5xl sm:text-6xl font-black text-white">$6.90 <span className="text-2xl font-bold text-amber-400">USD</span></span>
           </div>
 
           <p className="text-slate-300 text-sm mb-8">Pago único. Sin mensualidades ni cargos ocultos.</p>
