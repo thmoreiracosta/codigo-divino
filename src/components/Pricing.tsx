@@ -1,3 +1,4 @@
+import ebookImage from '../assets/cr2.png';
 import { Flame, ArrowRight, ShieldCheck, Star } from 'lucide-react';
 
 export function Pricing() {
@@ -49,7 +50,7 @@ export function Pricing() {
           <p className="text-slate-300 text-sm mb-8">Pago único. Sin mensualidades ni cargos ocultos.</p>
 
           <a
-            href="https://pay.hotmart.com/TU_LINK_DE_PAGO"
+            href="https://pay.kiwify.com/disLgbb"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full py-5 rounded-2xl font-black text-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 hover:from-amber-400 hover:to-yellow-400 transition-all shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2 group mb-6"
