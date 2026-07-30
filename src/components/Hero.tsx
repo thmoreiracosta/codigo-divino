@@ -1,4 +1,4 @@
-import ebookImage from '../assets/CÓDIGO_DIVINO.png';
+import ebookImage from '../assets/cr7.png';
 import { Sparkles, ArrowRight, ShieldCheck, CheckCircle } from 'lucide-react';
 
 export function Hero() {
@@ -39,12 +39,12 @@ export function Hero() {
           </div>
 
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-lg aspect-[3/4] bg-gradient-to-br from-amber-500/20 via-slate-900 to-slate-900 border border-amber-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col justify-between overflow-hidden group">
-              <div className="flex justify-center mb-2 relative z-10">
+            <div className="relative w-full max-w-lg aspect-[2.8/4] bg-gradient-to-br from-amber-500/20 via-slate-900 to-slate-900 border border-amber-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col justify-between overflow-hidden group">
+              <div className="flex justify-center mb-6 relative z-10">
                 <img
                   src={ebookImage}
                   alt="Código Divino"
-                  className="w-54 sm:w-80 object-contain drop-shadow-[0_25px_45px_rgba(0,0,0,.65)] group-hover:scale-105 transition-transform duration-500"
+                  className="w-54 sm:w-60 object-contain drop-shadow-[0_25px_45px_rgba(0,0,0,.65)] group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
@@ -69,6 +69,8 @@ export function Hero() {
                   <span className="text-sm font-medium">Ideal para toda la familia</span>
                 </div>
               </div>
+
+              
 
               <div className="border-t border-slate-800 pt-4 flex items-center justify-between">
                 <span className="text-slate-400 text-xs">Formato Digital PDF</span>

@@ -1,5 +1,6 @@
 import ebookImage from '../assets/cr2.png';
-import { Flame, ArrowRight, ShieldCheck, Star } from 'lucide-react';
+import garantiaImage from '../assets/garantiasatisfaccion.png';
+import { Flame, ArrowRight, ShieldCheck, Star, CheckCircle } from 'lucide-react';
 
 export function Pricing() {
   return (
@@ -29,7 +30,7 @@ export function Pricing() {
           </div>
 
           <div className="text-slate-400 text-sm uppercase tracking-wider font-semibold mb-8">
-            Ebook Digital Completo
+            Ebook Digital Completo + 5 BONOS
           </div>
 
           <div className="flex items-center gap-12 mb-10">
@@ -66,22 +67,96 @@ export function Pricing() {
 
           </div>
 
-          <p className="text-slate-300 text-sm mb-8">
-            Pago único. Sin mensualidades ni cargos ocultos.
-          </p>
+          {/* BONOS */}
+          <div className="bg-gradient-to-r from-amber-500/10 to-yellow-500/5 border border-amber-500/30 rounded-2xl p-6 mb-8">
 
-          <a
-            href="https://pay.kiwify.com/disLgbb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-5 rounded-2xl font-black text-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 hover:from-amber-400 hover:to-yellow-400 transition-all shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2 group mb-6"
-          >
-            <span>¡QUIERO CÓDIGO DIVINO AHORA!</span>
-            <ArrowRight
-              size={22}
-              className="group-hover:translate-x-1 transition-transform"
-            />
-          </a>
+            <h3 className="text-xl font-black text-white mb-4">
+              🎁 ¡Además recibirás <span className="text-amber-400">5 BONOS EXCLUSIVOS</span>!
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-left">
+
+              <div className="flex items-center gap-3">
+                <CheckCircle size={20} className="text-green-400 shrink-0" />
+                <span className="text-slate-200">
+                  <strong>BONO 1:</strong> Los 10 Mandamientos
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <CheckCircle size={20} className="text-green-400 shrink-0" />
+                <span className="text-slate-200">
+                  <strong>BONO 2:</strong> Los Milagros de Jesús
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <CheckCircle size={20} className="text-green-400 shrink-0" />
+                <span className="text-slate-200">
+                  <strong>BONO 3:</strong> Historias Bíblicas para Toda la Familia
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <CheckCircle size={20} className="text-green-400 shrink-0" />
+                <span className="text-slate-200">
+                  <strong>BONO 4:</strong> Devocionales de Poder
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3 md:col-span-2">
+                <CheckCircle size={20} className="text-green-400 shrink-0" />
+                <span className="text-slate-200">
+                  <strong>BONO 5:</strong> Manual de Interpretación Bíblica para Principiantes
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="border-t border-slate-700 pt-6 mt-4 mb-8">
+
+            <p className="text-slate-300 text-sm font-medium">
+              Pago único • Acceso inmediato • Sin mensualidades
+            </p>
+
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-6">
+
+            {/* Selo de Garantia */}
+            <div className="flex-shrink-0">
+              <img
+                src={garantiaImage}
+                alt="Garantía de Satisfacción de 7 Días"
+                className="w-40 lg:w-44 object-contain drop-shadow-[0_15px_35px_rgba(0,0,0,.45)] hover:scale-105 transition-all duration-300"
+              />
+
+            </div>
+
+            {/* Botão */}
+            <a
+              href="https://pay.kiwify.com/disLgbb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 rounded-2xl font-black text-lg
+bg-gradient-to-r from-amber-500 to-yellow-500
+text-slate-950
+hover:from-amber-400 hover:to-yellow-400
+transition-all
+shadow-xl shadow-amber-500/20
+flex items-center justify-center gap-2
+group"
+            >
+              <span>¡QUIERO EL CÓDIGO DIVINO!</span>
+              <ArrowRight
+                size={22}
+                className="group-hover:translate-x-1 transition-transform"
+              />
+            </a>
+
+          </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-slate-400">
             <div className="flex items-center gap-1.5">
