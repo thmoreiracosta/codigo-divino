@@ -1,4 +1,3 @@
-import React from 'react';
 import { Flame, ArrowRight, ShieldCheck, Star } from 'lucide-react';
 
 export function Pricing() {

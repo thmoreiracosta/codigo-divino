@@ -1,4 +1,3 @@
-import React from 'react';
 import { BookOpen, Users, Heart } from 'lucide-react';
 
 export function Benefits() {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Sparkles, ArrowRight, ShieldCheck, BookOpen, CheckCircle } from 'lucide-react';
 
 export function Hero() {
