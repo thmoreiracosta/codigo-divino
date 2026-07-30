@@ -138,7 +138,7 @@ export function Pricing() {
             {/* Botão */}
             <a
               className="px-10 py-4 rounded-2xl font-black text-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 hover:from-amber-400 hover:to-yellow-400 transition-all shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2 group"
-              href="https://pay.kiwify.com/disLgbb"
+              href="https://pay.kiwify.com/disLgbb?region=br"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
